@@ -1,0 +1,15 @@
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\bin\Debug\net6.0\oopProject.exe
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\bin\Debug\net6.0\oopProject.deps.json
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\bin\Debug\net6.0\oopProject.runtimeconfig.json
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\bin\Debug\net6.0\oopProject.dll
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\bin\Debug\net6.0\oopProject.pdb
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\oopProject.csproj.AssemblyReference.cache
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\oopProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\oopProject.AssemblyInfoInputs.cache
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\oopProject.AssemblyInfo.cs
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\oopProject.csproj.CoreCompileInputs.cache
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\oopProject.dll
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\refint\oopProject.dll
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\oopProject.pdb
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\oopProject.genruntimeconfig.cache
+C:\Users\Dali\Desktop\gitRepos\Gamma\c#.net_April_2023\oopProject\obj\Debug\net6.0\ref\oopProject.dll
