@@ -1,4 +1,4 @@
-# MERN - MAR 2023
+# C#/.NET - APRIL 2023
 
 [![Open in Visual Studio Code](https://img.shields.io/badge/open%20in%20vscode-blue??style=for-the-badge&logo=visualstudiocode)](https://open.vscode.dev//Dalihamrouni/python_ft_jan_2023)
 
