@@ -10,5 +10,3 @@
 <img src="https://github.com/Dalihamrouni/git_assets/blob/1d218fe43c3f241a90113a462c3f890fe59c172e/CD_Horizontal_Logo_Blue.png" alt="Coding Dojo Logo" width="180">
 
 <br/>
-
-<img src="https://github.com/Dalihamrouni/git_assets/blob/1d218fe43c3f241a90113a462c3f890fe59c172e/MERN-logo.png" alt="MERN logo" width="180">
