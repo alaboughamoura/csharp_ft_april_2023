@@ -9,6 +9,7 @@ class Soldier :
         Attributes
 */
 
+// public abstract class Soldier 
 public class Soldier 
 {
     // Attributes
@@ -34,7 +35,7 @@ public class Soldier
         Power = power;
         Health  = health;
     }
-    // Methods
+    // Methods : Functions inside classes
     public void ShowInfo()
     {
         Console.WriteLine($"Name : {Name}\nAge : {Age}\n Power : {Power}\nHealth : {Health}");
@@ -44,6 +45,7 @@ public class Soldier
         Age+=1;
         return Age;
     }
+    //  virtual Method :  can be changed by child Classes 
     public virtual double Train (double amount)
     {
         Power+=amount;
