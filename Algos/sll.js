@@ -76,6 +76,34 @@ class SLL {
             }
         }
     }
+    size(){
+        if (this.isEmpty()){
+            return false
+        } else {
+            let count  = 1 
+            let runner  = this.head
+            while (runner !==null){
+                count ++ 
+                runner = runner.next
+            }
+            return count
+        }
+    }
+    find(value){
+        if(this.isEmpty()){
+            return false
+        }else {
+            let runner = this.head
+            while(runner){
+                if(runner.value === value){
+                    return true
+                } else{
+                    runner = runner.next
+                }
+            }
+            return false
+        }
+    }
 }
 let nodeOne  = new Node(5)
 let nodeTwo  = new Node(10)
@@ -93,9 +121,11 @@ sll2 = new SLL()
 // console.log("SLL Before", sll);
 // sll.removeAtFront()
 // console.log("SLL After", sll);
-sll.print()
+// sll.print()
 // sll.addToBack(1000)
 // sll.print()
-sll.removeAtBack()
-console.log("************************");
-sll.print()
+// sll.removeAtBack()
+// console.log("************************");
+// sll.print()
+// console.log(sll.size())
+console.log(sll.find(0));
