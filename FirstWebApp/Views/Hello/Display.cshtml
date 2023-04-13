@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Display View</h1>
+    <hr>
+    <h4>Username  : @ViewBag.Username</h4>
+    <h4>Favorite Number  : @ViewBag.FavNumber</h4>
+        @{
+            for(int i = 0 ;i< ViewBag.FavNumber;i++){
+                <p>Number is equal to @i </p>
+            }
+        }
+
+        <hr>
+        <img src="~/images/Dog.jpg" alt="Dog">
+</body>
+</html>
