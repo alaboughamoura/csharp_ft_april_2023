@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-namespace FirstWebApp.Controllers;
+namespace FirstWebApp.Controllers; // Include the controller in the project 
 public class HelloController : Controller
 {
     // Routes
