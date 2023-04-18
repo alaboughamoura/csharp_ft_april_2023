@@ -1,0 +1,192 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+   <h2>All Games (IEnumerable)</h2>
+   <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Platform</th>
+    </tr>
+    @foreach (Game game in ViewBag.AllGamesIEnumerable)
+    {
+        <tr>
+            <td>@game.Title</td>
+            <td>@game.Price</td>
+            <td>@game.Genre</td>
+            <td>@game.Rating</td>
+            <td>@game.Platform</td>
+        </tr>
+    }
+   </table>
+   <hr>
+   <h2>All Games (List)</h2>
+   <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Platform</th>
+    </tr>
+    @foreach (Game game in ViewBag.AllGamesList)
+    {
+        <tr>
+            <td>@game.Title</td>
+            <td>@game.Price</td>
+            <td>@game.Genre</td>
+            <td>@game.Rating</td>
+            <td>@game.Platform</td>
+        </tr>
+    }
+   </table>
+   <hr>
+   <h2>All PC Games 💻 </h2>
+   <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Platform</th>
+    </tr>
+    @foreach (Game game in ViewBag.AllPCGames)
+    {
+        <tr>
+            <td>@game.Title</td>
+            <td>@game.Price</td>
+            <td>@game.Genre</td>
+            <td>@game.Rating</td>
+            <td>@game.Platform</td>
+        </tr>
+    }
+   </table>
+   <hr>
+   <h2>First 3 Games 👨‍🚒 </h2>
+   <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Platform</th>
+    </tr>
+    @foreach (Game game in ViewBag.FirstThreeGames)
+    {
+        <tr>
+            <td>@game.Title</td>
+            <td>@game.Price</td>
+            <td>@game.Genre</td>
+            <td>@game.Rating</td>
+            <td>@game.Platform</td>
+        </tr>
+    }
+   </table>
+   <hr>
+   <h2>First 3 Free Games 😎 </h2>
+   <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Platform</th>
+    </tr>
+    @foreach (Game game in ViewBag.FirstThreeFreeGames)
+    {
+        <tr>
+            <td>@game.Title</td>
+            <td>@game.Price</td>
+            <td>@game.Genre</td>
+            <td>@game.Rating</td>
+            <td>@game.Platform</td>
+        </tr>
+    }
+   </table>
+   <hr>
+   <h2>All Games Ordered By Title</h2>
+   <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Platform</th>
+    </tr>
+    @foreach (Game game in ViewBag.TitleOrderedGames)
+    {
+        <tr>
+            <td>@game.Title</td>
+            <td>@game.Price</td>
+            <td>@game.Genre</td>
+            <td>@game.Rating</td>
+            <td>@game.Platform</td>
+        </tr>
+    }
+   </table>
+   <hr>
+   <h2>All Games Ordered By Title & Price</h2>
+   <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Platform</th>
+    </tr>
+    @foreach (Game game in ViewBag.TitlePriceOrderedGames)
+    {
+        <tr>
+            <td>@game.Title</td>
+            <td>@game.Price</td>
+            <td>@game.Genre</td>
+            <td>@game.Rating</td>
+            <td>@game.Platform</td>
+        </tr>
+    }
+   </table>
+   <hr>
+   <h2>All Games Ordered By Price & Title</h2>
+   <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Platform</th>
+    </tr>
+    @foreach (Game game in ViewBag.PriceTitleOrderedGames)
+    {
+        <tr>
+            <td>@game.Title</td>
+            <td>@game.Price</td>
+            <td>@game.Genre</td>
+            <td>@game.Rating</td>
+            <td>@game.Platform</td>
+        </tr>
+    }
+   </table>
+   <hr>
+   <h2>My Favorite Game</h2>
+   <tr>
+            <td>@ViewBag.FavGame.Title</td>
+            <td>@ViewBag.FavGame.Price</td>
+            <td>@ViewBag.FavGame.Genre</td>
+            <td>@ViewBag.FavGame.Rating</td>
+            <td>@ViewBag.FavGame.Platform</td>
+    </tr>
+    <hr>
+    <h2>All Titles</h2>
+    @foreach (string title in ViewBag.AllTitles)
+    {
+        <li>@title</li>
+    }
+    <hr>
+    <h2>Most Expensive Game Price  = @ViewBag.MostExpGame</h2>
+    <hr>
+    <h1>@ViewBag.MatchTitle</h1>
+</div>
