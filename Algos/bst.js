@@ -45,6 +45,48 @@ class BST {
             return maxVal
         }
     }
+    contains(value){
+        if(this.iSEmpty()){
+            return false
+        }
+        let runner = this.root
+        while(runner){
+            if(runner.value === value){
+                return true
+            }else{
+                if(runner.value>value){
+                    runner = runner.left
+                }
+                else{
+                    runner = runner.right
+                }
+            }
+        }
+        return false
+    }
+    insert(value){
+        let newNode = new Node(value)
+        if(this.iSEmpty()){
+            this.root = newNode
+            return this
+        }
+        let runner = this.root;
+        while(runner){
+            if(runner.value<=value){
+                if(runner.right === null){
+                    runner.right = newNode
+                    return this
+                }
+                runner = runner.right
+            }else{
+                if(runner.left === null){
+                    runner.left = newNode
+                    return this
+                }
+                runner  = runner.left;
+            }
+        }
+    }
 }
 nodeOne = new Node(10)
 nodeTwo = new Node(5)
@@ -59,4 +101,11 @@ nodeFive = new Node(20)
 nodeThree.right = nodeFive
 nodeSix = new Node(4)
 nodeTwo.left = nodeSix
-console.log(`Min Value = ${bst.min()}\nMax Value = ${bst.max()}` );
+// console.log(`Min Value = ${bst.min()}\nMax Value = ${bst.max()}` );
+// console.log("Contains " , bst.contains(0));
+bst.insert(3)
+console.log("Contains Before" , bst.contains(7));
+bst.insert(7);
+// console.log(bst);
+// console.log(bst.min());
+console.log("Contains After" , bst.contains(7));
