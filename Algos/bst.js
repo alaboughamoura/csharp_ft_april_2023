@@ -87,6 +87,36 @@ class BST {
             }
         }
     }
+    removeMinValue(){
+        if(this.iSEmpty()){
+            return false
+        }else{
+            let runner  = this.root
+            while(runner.left){
+                if (runner.left.left === null){
+                    runner.left = null
+                    return this
+                }else{
+                    runner = runner.left
+                }
+            }
+        }
+    }
+    removeMaxValue(){
+        if(this.iSEmpty()){
+            return false
+        }else{
+            let runner  = this.root
+            while(runner.right){
+                if (runner.right.right === null){
+                    runner.right = null
+                    return this
+                }else{
+                    runner = runner.right
+                }
+            }
+        }
+    }
 }
 nodeOne = new Node(10)
 nodeTwo = new Node(5)
@@ -101,11 +131,19 @@ nodeFive = new Node(20)
 nodeThree.right = nodeFive
 nodeSix = new Node(4)
 nodeTwo.left = nodeSix
-// console.log(`Min Value = ${bst.min()}\nMax Value = ${bst.max()}` );
+// console.log(`Min Value = ${bst.min()}\nMax Value = ${bst.max()}`);
 // console.log("Contains " , bst.contains(0));
-bst.insert(3)
-console.log("Contains Before" , bst.contains(7));
+bst.insert(3);
+// console.log("Contains Before" , bst.contains(7));
 bst.insert(7);
 // console.log(bst);
 // console.log(bst.min());
-console.log("Contains After" , bst.contains(7));
+// console.log("Contains After" , bst.contains(7));
+console.log("Minimum Before Delete:" , bst.min() );
+bst.removeMinValue()
+console.log("Minimum After Delete:" , bst.min() );
+console.log("*************+********");
+console.log("Maximum Before Delete:" , bst.max() );
+bst.removeMaxValue()
+console.log("Maximum After Delete:" , bst.max() );
+
