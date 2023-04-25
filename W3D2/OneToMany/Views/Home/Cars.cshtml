@@ -1,0 +1,65 @@
+@model Car
+
+<div class=" row text-center">
+   <div class="col-6">
+    <h1>Add Car</h1>
+    <form asp-action="CreateCar" asp-controller="Home" method="post">
+        <div class="form-group">
+            <label asp-for="Model"></label>
+            <span asp-validation-for="Model" class="text-danger"></span>
+            <input asp-for="Model" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Make"></label>
+            <span asp-validation-for="Make" class="text-danger"></span>
+            <input asp-for="Make" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Year"></label>
+            <span asp-validation-for="Year" class="text-danger"></span>
+            <input asp-for="Year" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Color"></label>
+            <span asp-validation-for="Color" class="text-danger"></span>
+            <input asp-for="Color" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="OwnerId"></label>
+            <span asp-validation-for="OwnerId" class="text-danger"></span>
+            <select asp-for="OwnerId" class="form-control">
+                @foreach (Owner o in ViewBag.AllOwners)
+                {
+                    <option value=@o.OwnerId>@o.Name --- ID  = @o.OwnerId</option>
+                }
+            </select>
+        </div>
+        <input type="submit" value="Create" class="btn btn-primary">
+    </form>
+   </div>
+   <div class="col-6">
+    <h1>All Cars</h1>
+    <table class="table table-striped">
+         <tr>
+            <th> Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Owned By</th>
+           
+        </tr>
+    @foreach (Car o in ViewBag.AllCars)
+    {
+        <tr>
+            <td> @o.Make</td>
+            <td>@o.Model</td>
+            <td>@o.Year</td>
+            <td>@o.Color</td>
+            <td>@o.Owner.Name</td>
+           
+        </tr>
+    }
+    </table>
+    
+   </div>
+</div>
