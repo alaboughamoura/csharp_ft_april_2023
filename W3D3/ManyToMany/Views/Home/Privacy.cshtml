@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+@model Movie
+<div class="text-center">
+    <div class=" row text-center">
+   <div class="col-3">
+    <h1>Add Movie</h1>
+    <form asp-action="CreateMovie" asp-controller="Home" method="post">
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <span asp-validation-for="Title" class="text-danger"></span>
+            <input asp-for="Title" class="form-control"/>
+        </div>
+        <br>
+        <div class="form-group">
+            <label asp-for="Poster"></label>
+            <span asp-validation-for="Poster" class="text-danger"></span>
+            <input asp-for="Poster" class="form-control"/>
+        </div>
+        <br>
+        <div class="form-group">
+            <label asp-for="Genre"></label>
+            <span asp-validation-for="Genre" class="text-danger"></span>
+            <input asp-for="Genre" class="form-control"/>
+        </div>
+        <br>
+        <input type="submit" value="Create" class="btn btn-primary">
+    </form>
+   </div>
+   <div class="col-9">
+    <h1>All Movies</h1>
+    <table class="table table-striped">
+        <tr>
+            <th>Poster</th>
+            <th>Title</th>
+            <th>Genre</th>
+        </tr>
+        @foreach (Movie a in ViewBag.AllMovies)
+        {
+            <tr>
+                <td><img src="@a.Poster"  height="100" width="100" alt=""></td>
+                <td>@a.Title</td>
+                <td>@a.Genre</td>
+            </tr>
+        }
+    </table>
+   </div>
+</div>
+</div>
+

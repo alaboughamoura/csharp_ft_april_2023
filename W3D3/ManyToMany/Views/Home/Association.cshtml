@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+@model Association
+<div class="text-center">
+    <div class=" row text-center">
+   <div class="col-4">
+    <h1>Add Association</h1>
+    <form asp-action="AddAssociation" asp-controller="Home" method="post">
+        <div class="form-group">
+            <label asp-for="ActorId"></label>
+            <select asp-for="ActorId" class="form-control">
+                @foreach (Actor a in ViewBag.AllActors)
+                {
+                    <option value="@a.ActorId">@a.Name</option>
+                }
+            </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label asp-for="MovieId"></label>
+            <select asp-for="MovieId"  class="form-control">
+                @foreach (Movie m in ViewBag.AllMovies)
+                {
+                    <option value="@m.MovieId">@m.Title</option>
+                }
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="Add Association" class="btn btn-warning">
+    </form>
+   </div>
+   <div class="col-4">
+    <h4> Associations (Actor - Movies)</h4>
+    @foreach (Actor actor in ViewBag.AllActors)
+    {
+        <h4>@actor.Name</h4>
+        @foreach (Association asc in actor.MyMovies)
+        {
+            <h6 class="text-primary">@asc.Movie.Title</h6>
+        }
+    }
+   </div>
+   <div class="col-4">
+    <h4>Associations (Movie - Actors)</h4>
+    @foreach (Movie m in ViewBag.AllMovies)
+    {
+        <h4>@m.Title</h4>
+        @foreach (Association asc in m.MyActors)
+        {
+            <h6 class="text-danger">@asc.Actor.Name</h6>
+        }
+    }
+   </div>
+</div>
+</div>
+
