@@ -1,0 +1,29 @@
+@model Order
+<a href="/logout" class="btn btn-danger">Logout</a>
+<div class="row">
+    <div class="col-6 border border p-2 m-2 shadow rounded">
+        <h2>@ViewBag.OneCraft.Title</h2>
+        <img src="@ViewBag.OneCraft.Image" height="200" width="200" alt="">
+        <h5>By : @ViewBag.OneCraft.Creator.Username</h5>
+        <h5>$@ViewBag.OneCraft.Price</h5>
+        <h5>@ViewBag.OneCraft.Quantity In Stock</h5>
+        <p>@ViewBag.OneCraft.Description</p>
+    </div>
+    <div class="col-6">
+        <form  asp-action="CreateOrder" asp-controller="Home" method="post">
+            <div class="form-group">
+                <select asp-for="QuantityOrdered" class="form-control">
+                    @for(int i =1 ; i<= ViewBag.OneCraft.Quantity;i++)
+                    {
+                        <option>
+                            @i
+                        </option>
+                    }
+                </select>
+                <input type="hidden" name="CraftId" value="@ViewBag.OneCraft.CraftId">
+                @* <input type="number" min="1" max="@ViewBag.OneCraft.Quantity" class="form-control"> *@
+            </div>
+            <input type="submit" value="Buy" class="btn btn-success">
+        </form>
+    </div>
+</div>

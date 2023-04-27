@@ -1,0 +1,72 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CraftsShop
+build_property.RootNamespace = CraftsShop
+build_property.ProjectDir = C:\Users\Dali\Desktop\gitRepos\Gamma\csharp_ft_april_2023\W3D4\CraftsShop\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Dali\Desktop\gitRepos\Gamma\csharp_ft_april_2023\W3D4\CraftsShop
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/Crafts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmFmdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/NewCraft.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdDcmFmdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/OneCraft.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPbmVDcmFmdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/OrderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlckhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Home/_Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dali/Desktop/gitRepos/Gamma/csharp_ft_april_2023/W3D4/CraftsShop/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pvcaufbxir

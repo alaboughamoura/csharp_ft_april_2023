@@ -1,0 +1,22 @@
+
+@model User
+<a href="/logout" class="btn btn-danger">Logout</a>
+<div class="text-center">
+    <h2>Welcome, @Model.Username!</h2>
+
+    <h4>Buyer Stats</h4>
+    <h5>
+        You Bought @ViewBag.CraftsBought items
+    </h5>
+    <h3>@ViewBag.TotalSold.Count</h3>
+    <h5>
+    @{
+        var sum =0.00;
+        foreach(Order o in ViewBag.TotalSold)
+        {
+            sum  += o.QuantityOrdered * o.Craft.Price;
+        }
+    }
+    $ @sum
+    </h5>
+</div>

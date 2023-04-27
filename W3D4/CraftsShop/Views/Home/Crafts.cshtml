@@ -1,0 +1,27 @@
+@model List<Craft>
+    <h2>All Crafts</h2>
+    <a href="/logout" class="btn btn-danger">Logout</a>
+
+<div class="d-flex flex-wrap">    
+    @foreach (Craft craft in Model)
+    {
+        <div class="border border p-2 m-2 shadow rounded">
+            <h4> <a href="/crafts/@craft.CraftId">@craft.Title </a>
+                @if(craft.UserId == Context.Session.GetInt32("userId"))
+                {
+                    <form action="">
+                        <input type="submit" value="X" class="btn btn-danger">
+                    </form>
+                }
+            </h4>
+            <img src="@craft.Image" height="200" width="200" alt="">
+            <h5>By : @craft.Creator.Username</h5>
+            <h5>$@craft.Price</h5>
+            <h5>@craft.Quantity In Stock</h5>
+            @* <h5>@{
+                var dt = DateTime.Now.Date.Year - craft.CreatedAt.Date.Year;
+                }
+                @dt</h5> *@
+        </div>
+    }
+</div>

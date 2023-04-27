@@ -1,0 +1,41 @@
+
+
+<h1>
+    Order History
+</h1>
+
+<h3>Your Sales</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Craft Ordered</th>
+        <th>Quantity</th>
+        <th>Buyer</th>
+        <th>Total</th>
+        <th>Order Date</th>
+    </tr>
+    @foreach (Order o in ViewBag.Selling)
+    {
+        <tr>
+            <td>@o.Craft.Title</td>
+            <td>@o.QuantityOrdered</td>
+            <td>@o.User.Username</td>
+            <td>@{
+                var total = 0.00;
+                total = o.Craft.Price * o.QuantityOrdered;
+            }
+            @total.ToString("C")
+            </td>
+            <td>@o.CreatedAt.Date</td>
+        </tr>
+    }
+</table>
+<h3>Your Orders</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Craft Ordered</th>
+        <th>Quantity</th>
+        <th>Seller</th>
+        <th>Total</th>
+        <th>Order Date</th>
+    </tr>
+</table>
